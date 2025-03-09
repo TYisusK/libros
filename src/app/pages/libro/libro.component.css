@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1e1; /* Fondo suave color beige, tipo madera envejecida */
+    margin: 0;
+    padding: 0;
+    color: #3e3b32; /* Color marrón oscuro, para un look clásico */
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #b98f61; /* Borde estilo madera */
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+}
+
+/* Título principal */
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #3e3b32;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Subtítulos */
+.subtitulo {
+    font-size: 1.5rem;
+    color: #b98f61; /* Color madera */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #6a4f33;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cfa15b; /* Borde beige/amarillo que imita la madera */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f1e1; /* Color beige claro */
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #8e6f47; /* Madera más oscura en focus */
+    background-color: #fff;
+}
+
+/* Estilo de los botones */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #6a4f33; /* Color madera */
+    color: #fff;
+    border: none;
+}
+
+.insert-btn {
+    background-color: #2ecc71; /* Verde oliva */
+}
+
+.update-btn {
+    background-color: #f39c12; /* Color mostaza */
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Rojo terracota */
+}
+
+.clean-btn {
+    background-color: #3498db; /* Azul suave */
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+/* Estilo de la tabla */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.book-table th,
+.book-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.book-table th {
+    background-color: #8e6f47;
+    color: white;
+}
+
+.book-table td {
+    background-color: #f9f1e1;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo de la línea horizontal */
+.divider {
+    border: none;
+    border-top: 2px solid #6a4f33; /* Línea de madera para separación */
+    margin: 30px 0;
+}
+
+/* Animación para los botones */
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Estilos para los botones en la tabla */
+.book-table td button {
+    padding: 8px 12px;
+    background-color: #8e6f47;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-table td button:hover {
+    background-color: #6a4f33;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos generales para el select */
+.menu-select {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #4a3b07;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    appearance: none; /* Elimina el estilo por defecto en algunos navegadores */
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 30px; /* Mueve el select hacia la parte superior */
+    right: 30px; /* Mueve el select hacia la derecha */
+    z-index: 10; /* Asegura que el select se quede encima del contenido */
+}
+
+/* Estilo cuando se hace hover */
+.menu-select:hover {
+    border-color: #9c8c6a; /* Cambia el borde al hacer hover */
+    box-shadow: 0 2px 15px rgba(52, 152, 219, 0.3); /* Sombra más grande */
+}
+
+/* Estilo cuando el select está en foco (clickado) */
+.menu-select:focus {
+    border-color: #a39a5e; /* Cambia el borde al hacer foco */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Resalta el borde con un destello */
+}
+
+/* Estilo para el texto del option */
+.menu-select option {
+    padding: 10px;
+}
+
+/* Estilos para un diseño más limpio */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    position: relative; /* Hace que el body sea el contenedor relativo para el select */
+}
